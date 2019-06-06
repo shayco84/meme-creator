@@ -24,8 +24,8 @@
         </div>
         <div class="flex-column-container">
             <ul class="menu">
-                <li class="menu-item font-lato font-weight-700 font-size-16 ">Meme Gallery</li>
-                <li class="menu-item font-lato font-weight-700 font-size-16 active">Meme Editor</li>
+                <li class="menu-item font-lato font-weight-700 font-size-16 ">Gallery</li>
+                <li class="menu-item font-lato font-weight-700 font-size-16 active">Editor</li>
                 <li class="menu-item font-lato font-weight-700 font-size-16 ">About</li>
                 <li class="menu-item font-lato font-weight-700 font-size-16 ">Contact</li>
             </ul>
@@ -36,21 +36,33 @@
 <section class="editor-wrapper">
     <div class="main-container">
         <div class="editor-container">
+
             <canvas class="meme-canvas" id="canvas"></canvas>
+
             <div class="row-editor-and-download-btn-container">
                 <div class="row-editor font-lato font-weight-700 font-size-28">
-                    Edit Rows
+                    <label for="top-line">Top Line</label>
+                    <input onkeyup="onKeyUpMemeText(this, event, 'top')" type="text" id="top-line"
+                           name="top-line" placeholder="Top row text here..."/>
+                    <label for="middle-line">Bottom Line</label>
+                    <input onkeyup="onKeyUpMemeText(this, event, 'bottom')" type="text" id="middle-line"
+                           name="middle-line" placeholder="Bottom row text here..."/>
+                    <label for="bottom-line">Middle Line</label>
+                    <input onkeyup="onKeyUpMemeText(this, event, 'middle')" type="text" id="bottom-line"
+                           name="bottom-line" placeholder="Middle row text here..."/>
                 </div>
+
                 <button class="download-meme-button font-lato font-weight-700 font-size-16"
                         onclick="downloadMemeClicked()">
                     Download Meme
                 </button>
             </div>
+
         </div>
     </div>
 </section>
 
-<img class="dummy-img" src="img/memes/006.jpg" alt="img/empty-post.png">
+<img class="dummy-img gallery-container" src="img/memes/006.jpg" alt="img/empty-post.png">
 
 <script src="js/meme-editor-model.js"></script>
 <script src="js/meme-editor-controller.js"></script>
