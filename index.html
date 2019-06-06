@@ -15,11 +15,56 @@
 
    </header>
    <section>
-    <div class="gallery-container">
-
+    <div class="bar">
+        <input list="search" class="search-input" type="text" placeholder="Search...">
+        <datalist id="search">
+                <option value="animal">
+                <option value="child">
+                <option value="politics">
+                <option value="celebs">
+                <option value="movie">
+                <option value="sport">
+                </datalist>
+        <button onclick="onSearch()">search</button>
     </div>
+    <div class="gallery-container">
+            <ul id="memes">
+                    <li class="meme"><img src="img/memes/003.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/004.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/005.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/006.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/12.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/19.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/2.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/5.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/8.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/9.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/Ancient-Aliens.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/One-Does-Not-Simply.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/Oprah-You-Get-A.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/X-Everywhere.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/drevil.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/img11.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/img12.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/img2.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/img4.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/img5.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/img6.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/leo.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/meme1.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/patrick.jpg" alt=""></li>
+                    <li class="meme"><img src="img/memes/putin.jpg" alt=""></li>
+                   
+                   
+                    
+            
+                </ul>
+    </div>
+    
    </section>
 
+    <script src="js/gallery-service.js"></script>
     <script src="js/gallery-controller.js"></script>
+    <script src="js/util-service.js"></script>
 </body>
 </html>
