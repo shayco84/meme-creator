@@ -29,14 +29,13 @@ function renderMemeText(elTextRow, line) {
     renderBaseImg(gElImg)
     // let y
     // if (line === 'top') y = 60
-    // if (line === 'top') y = gElImg.height / 2
-    // if (line === 'top') y = -60
+    // if (line === 'middle') y = gCanvas.height / 2
+    // if (line === 'bottom') y = -60
     gCtx.font = "60px Arial";
     gCtx.textAlign = "center";
     gCtx.textBaseline = "bottom";
     gCtx.fillStyle = "black";  //<======= here
     gCtx.fillText(elTextRow.value, (gCanvas.width / 2), 60);
-
 }
 
 function uploadUserImage() {
