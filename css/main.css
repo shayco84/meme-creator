@@ -1,13 +1,40 @@
+/* =============================================== */
+/* =============================================== */
+/* ================== CSS Reset ================== */
+/* =============================================== */
+/* =============================================== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    background-color: #ffffff;
+}
+
+button:focus {
+    outline:0;
+}
+
+button, li {
+    cursor: pointer;
+}
+
 body{
-    margin:0;
-    background-color: beige;
+    background-color: white;
 }
 
 h1{
-text-align: center;
+    text-align: center;
 }
 
-#memes .meme{
+.meme{
     float: right;
     margin: 5px;
     width: 120px;
@@ -19,24 +46,24 @@ text-align: center;
     object-position: 50% 50%;
 }
 
-
-
-img{
+#memes img{
     width: 120px;
     height: 120px;
 }
 
-.bar{
+.search-bar{
     display: flex;
     justify-content: center;
 }
 
-/* .gallery-container{
-    display: flex;
-    justify-content: center;
-} */
+.display-none {
+    display: none;
+}
 
 
+.row-editor input {
+    margin-bottom: 20px;
+}
 
 
 
