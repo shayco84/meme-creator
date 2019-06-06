@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meme Editor</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/meme-editor.css">
+</head>
+
+<body onload="onInit()">
+
+<nav class="nav-bar">
+    <div class="main-container">
+        <div class="flex-column-container">
+            <h1 class="logo logo-header font-logo font-logo-regular">
+                <span class="logo-capitalize">M</span>
+                eme-
+                <span class="logo-capitalize">S</span>
+                hmeme
+                <span class="logo-dot">.</span>
+            </h1>
+        </div>
+        <div class="flex-column-container">
+            <ul class="menu">
+                <li class="menu-item font-lato font-weight-700 font-size-16 ">Meme Gallery</li>
+                <li class="menu-item font-lato font-weight-700 font-size-16 active">Meme Editor</li>
+                <li class="menu-item font-lato font-weight-700 font-size-16 ">About</li>
+                <li class="menu-item font-lato font-weight-700 font-size-16 ">Contact</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="editor-wrapper">
+    <div class="main-container">
+        <div class="editor-container">
+            <img class="meme-canvas" src="img/memes/006.jpg" alt="img/empty-post.png">
+            <div class="row-editor-and-download-btn-container">
+                <div class="row-editor font-lato font-weight-700 font-size-28">
+                    Edit Rows
+                </div>
+                <button class="download-meme-button font-lato font-weight-700 font-size-16"
+                        onclick="downloadMemeClicked()">
+                    Download Meme
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--js/gallery-controller.js-->
+</body>
