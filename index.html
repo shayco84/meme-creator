@@ -86,7 +86,7 @@
         <div class="main-container">
             <div class="editor-container">
 
-                <canvas class="meme-canvas" id="canvas"></canvas>
+                <canvas class="meme-canvas" ></canvas>
 
                 <div class="row-editor-and-download-btn-container">
                     <div class="row-editor font-lato font-weight-700 font-size-21">
@@ -101,9 +101,9 @@
                                name="bottom-line" placeholder="Middle row text here..."/>
                     </div>
 
-                    <button class="download-meme-button font-lato font-weight-700 font-size-16"
-                            onclick="downloadMemeClicked()">
+                    <button class="download-meme-button font-lato font-weight-700 font-size-16">
                         Download Meme
+                        <a href="#" onclick="downloadMemeClicked(this)" download="my-meme.jpg"> </a>
                     </button>
                 </div>
 

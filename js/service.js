@@ -1,11 +1,11 @@
 'use strict'
 
-let gKeywords = {'politics':4,'animal':4,'movie':9,'celebs':4, 'child':5, 'sport':1}
+let gKeywords = { 'politics': 4, 'animal': 4, 'movie': 9, 'celebs': 4, 'child': 5, 'sport': 1 }
 
 let gImgs = [
     { id: 1, url: "img/memes/003.jpg", keyword: ['politics'] },
     { id: 2, url: "img/memes/004.jpg", keyword: ['animal'] },
-    { id: 3, url: "img/memes/005.jpg", keyword: ['animal','child'] },
+    { id: 3, url: "img/memes/005.jpg", keyword: ['animal', 'child'] },
     { id: 4, url: "img/memes/006.jpg", keyword: ['animal'] },
     { id: 5, url: "img/memes/12.jpg", keyword: ['celebs'] },
     { id: 6, url: "img/memes/19.jpg", keyword: ['celebs'] },
@@ -24,7 +24,7 @@ let gImgs = [
     { id: 19, url: "img/memes/img4.jpg", keyword: ['politics'] },
     { id: 20, url: "img/memes/img5.jpg", keyword: ['child'] },
     { id: 21, url: "img/memes/img6.jpg", keyword: ['animal'] },
-    { id: 22, url: "img/memes/leo", keyword: ['movie','celebs'] },
+    { id: 22, url: "img/memes/leo.jpg", keyword: ['movie', 'celebs'] },
     { id: 23, url: "img/memes/meme1.jpg", keyword: ['movie'] },
     { id: 24, url: "img/memes/patrick.jpg", keyword: ['movie'] },
     { id: 25, url: "img/memes/putin.jpg", keyword: ['politics'] },
@@ -61,17 +61,17 @@ let gMeme = {
 }
 
 
+function search() {
+    var value = document.querySelector('.search-input').value;
+    var result = gImgs.filter(function (img) {
+        return img.keyword.findIndex(element => element === value) !== -1
+    })
+    renderFilteredGallery(result)
+}
 
+function downloadMeme(elLink){
+    let canvas = document.querySelector('.meme-canvas')
+    let imgContent = canvas.toDataURL('image/jpeg');
+    elLink.href = imgContent
+}
 
-
-
-
-
-
-
-
-
-
-// function search(){
-
-// }
