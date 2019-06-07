@@ -5,11 +5,16 @@ function onInit() {
 }
 
 function onSearch(){
-    // search()
+    search()
 }
 
-function downloadMemeClicked() {
+function downloadMemeClicked(elLink) {
+    downloadMeme(elLink)
+}
 
+function uploadUserImage() {
+    // https://stackoverflow.com/questions/13938686/can-i-load-a-local-file-into-an-html-canvas-element
+    // http://jsfiddle.net/z3JtC/4
 }
 
 function onKeyUpMemeText(elTextRow, event, line) {

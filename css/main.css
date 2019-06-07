@@ -124,6 +124,12 @@ h1{
     height: 120px;
 }
 
+#gallery-memes img:hover{
+    opacity: 0.8;
+}
+
+
+
 .search-bar{
     display: flex;
     justify-content: center;

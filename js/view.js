@@ -12,13 +12,13 @@ function renderMemeEditor(elImg) {
 
 function toggleGalleryAndMemeEditor() {
     let elGalleryPageContainer = document.querySelector('.gallery-page-container')
-    let elEditorPageContainer  = document.querySelector('.editor-page-container')
+    let elEditorPageContainer = document.querySelector('.editor-page-container')
     elGalleryPageContainer.classList.toggle('display-none')
     elEditorPageContainer.classList.toggle('display-none')
 }
 
 function renderBaseImg(elImg) {
-    gCanvas.width  = elImg.width;
+    gCanvas.width = elImg.width;
     gCanvas.height = elImg.height;
     gCtx.drawImage(elImg, 0, 0);
 }
@@ -38,7 +38,13 @@ function renderMemeText(elTextRow, line) {
     gCtx.fillText(elTextRow.value, (gCanvas.width / 2), 60);
 }
 
-function uploadUserImage() {
-    // https://stackoverflow.com/questions/13938686/can-i-load-a-local-file-into-an-html-canvas-element
-    // http://jsfiddle.net/z3JtC/4
+
+
+function renderFilteredGallery(filtered) {
+    let strHtml = `<ul id="gallery-memes">\n`
+    for (let img of filtered) {
+        strHtml += `<li class="gallery-meme"><img id="img-${img.id}" onclick="galleryImgClicked(this)" src="${img.url}" alt=""></li>\n`
+    }
+    strHtml += `</ul>`
+    document.querySelector('.gallery-container').innerHTML = strHtml
 }
