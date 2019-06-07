@@ -1,10 +1,14 @@
 'use strict'
-let gElImg = document.querySelector(".dummy-img");
-
 
 function onInit() {
-    renderMemeEditor(gElImg)
+
 }
+
+function onSearch(){
+    // search()
+}
+
+
 
 function downloadMemeClicked() {
 
