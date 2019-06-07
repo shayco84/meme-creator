@@ -23,3 +23,16 @@ function onKeyUpMemeText(elTextRow, event, line) {
     renderMemeTexts()
 }
 
+function navBarItemClicked(elNavBarItem, page) {
+    renderActiveNavBarItem(elNavBarItem)
+    if (page === 'editor') {
+        let elCurImg = document.querySelector(`#gallery-memes #${gMeme.selectedImgId}`)
+        renderMemeEditor(elCurImg)
+    } else {
+        toggleGalleryAndMemeEditor()
+    }
+}
+
+function galleryImgClicked(elImg) {
+    renderMemeEditor(elImg)
+}
