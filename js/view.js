@@ -2,7 +2,6 @@
 
 let gCanvas = document.querySelector(".meme-canvas");
 let gCtx = gCanvas.getContext("2d");
-gCtx.font = "30px Arial";  // TODO - change to impact font
 
 function renderMemeEditor(elImg) {
     gMeme.selectedImgId = elImg.id
@@ -23,19 +22,22 @@ function renderBaseImg(elImg) {
     gCtx.drawImage(elImg, 0, 0);
 }
 
-function renderMemeText(elTextRow, line) {
+function renderMemeTexts() {
     let elMemes = document.querySelector("#gallery-memes")
     let elCurImg = elMemes.querySelector(`#${gMeme.selectedImgId}`)
     renderBaseImg(elCurImg)
-    // let y
-    // if (line === 'top') y = 60
-    // if (line === 'middle') y = gCanvas.height / 2
-    // if (line === 'bottom') y = -60
-    gCtx.font = "60px Arial";
-    gCtx.textAlign = "center";
-    gCtx.textBaseline = "bottom";
-    gCtx.fillStyle = "black";  //<======= here
-    gCtx.fillText(elTextRow.value, (gCanvas.width / 2), 60);
+    let lines = ["top", "middle", "bottom"]
+    for (let line of lines) {
+        gCtx.font         = gMeme[line].font
+        gCtx.textAlign    = gMeme[line].align
+        gCtx.fillStyle    = gMeme[line].color
+        gCtx.textBaseline = "bottom"
+        let y
+        if (line === 'top'   ) y = 60
+        if (line === 'middle') y = +gCanvas.height / 2 + 40
+        if (line === 'bottom') y = +gCanvas.height
+        gCtx.fillText(gMeme[line].txt, +gCanvas.width / 2, y);
+    }
 }
 
 function uploadUserImage() {

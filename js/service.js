@@ -1,8 +1,8 @@
 'use strict'
 
-var gKeywords = {'politics':4,'animal':4,'movie':9,'celebs':4, 'child':5, 'sport':1}
+let gKeywords = {'politics':4,'animal':4,'movie':9,'celebs':4, 'child':5, 'sport':1}
 
-var gImgs = [
+let gImgs = [
     { id: 1, url: "img/memes/003.jpg", keyword: ['politics'] },
     { id: 2, url: "img/memes/004.jpg", keyword: ['animal'] },
     { id: 3, url: "img/memes/005.jpg", keyword: ['animal','child'] },
@@ -32,16 +32,32 @@ var gImgs = [
 
 
 
-var gMeme = {
+let gMeme = {
     selectedImgId: 4,
-    txts: [
-        {
-            line: 'I love Javascript',
-            size: 20,
-            align: 'left',
-            color: 'red'
-        }
-    ]
+
+    top: {
+        txt: '',
+        fontSize: 20,
+        font: '60px Arial',
+        align: 'center',
+        color: 'black',
+    },
+
+    bottom: {
+        txt: '',
+        fontSize: 20,
+        font: '60px Arial',
+        align: 'center',
+        color: 'black',
+    },
+
+    middle: {
+        txt: '',
+        fontSize: 20,
+        font: '60px Arial',
+        align: 'center',
+        color: 'black',
+    }
 }
 
 
