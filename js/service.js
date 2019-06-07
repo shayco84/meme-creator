@@ -28,7 +28,6 @@ var gImgs = [
     { id: 23, url: "img/memes/meme1.jpg", keyword: ['movie'] },
     { id: 24, url: "img/memes/patrick.jpg", keyword: ['movie'] },
     { id: 25, url: "img/memes/putin.jpg", keyword: ['politics'] },
-
 ]
 
 
@@ -43,7 +42,6 @@ var gMeme = {
             color: 'red'
         }
     ]
-
 }
 
 

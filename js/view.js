@@ -4,7 +4,6 @@ let gCanvas = document.querySelector(".meme-canvas");
 let gCtx = gCanvas.getContext("2d");
 gCtx.font = "30px Arial";  // TODO - change to impact font
 
-
 function renderMemeEditor(elImg) {
     gMeme.selectedImgId = elImg.id
     toggleGalleryAndMemeEditor()
@@ -19,18 +18,15 @@ function toggleGalleryAndMemeEditor() {
 }
 
 function renderBaseImg(elImg) {
-    console.log('elImg = ', elImg, 'gCanvas = ', gCanvas)
     gCanvas.width  = elImg.width;
     gCanvas.height = elImg.height;
     gCtx.drawImage(elImg, 0, 0);
 }
 
 function renderMemeText(elTextRow, line) {
-    console.log("before renderBaseImg(gElImg)")
-    let elMemes = document.querySelector("#memes")
+    let elMemes = document.querySelector("#gallery-memes")
     let elCurImg = elMemes.querySelector(`#${gMeme.selectedImgId}`)
     renderBaseImg(elCurImg)
-    console.log("After renderBaseImg(gElImg)")
     // let y
     // if (line === 'top') y = 60
     // if (line === 'middle') y = gCanvas.height / 2
