@@ -4,16 +4,14 @@ let gCanvas = document.querySelector(".meme-canvas");
 let gCtx = gCanvas.getContext("2d");
 
 function renderMemeEditor(elImg) {
-    gMeme.selectedImgId = elImg.id
-    toggleGalleryAndMemeEditor()
+    document.querySelector('.gallery-page-container').classList.add('display-none')
+    document.querySelector('.editor-page-container').classList.remove('display-none')
     renderBaseImg(elImg)
 }
-
-function toggleGalleryAndMemeEditor() {
-    let elGalleryPageContainer = document.querySelector('.gallery-page-container')
-    let elEditorPageContainer = document.querySelector('.editor-page-container')
-    elGalleryPageContainer.classList.toggle('display-none')
-    elEditorPageContainer.classList.toggle('display-none')
+3
+function renderGallery() {
+    document.querySelector('.gallery-page-container').classList.remove('display-none')
+    document.querySelector('.editor-page-container').classList.add('display-none')
 }
 
 function renderBaseImg(elImg) {
@@ -55,8 +53,8 @@ function uploadUserImage() {
 }
 
 function renderActiveNavBarItem(elNavBarSelectedItem) {
-    let elsNavBarItem = document.querySelectorAll('.nav-bar-menu .menu-item')
-    for (let elNavBarItem of elsNavBarItem) {
+    let elsNavBarItems = document.querySelectorAll('.nav-bar-menu .menu-item')
+    for (let elNavBarItem of elsNavBarItems) {
         elNavBarItem.classList.remove('active')
     }
     elNavBarSelectedItem.classList.add('active')

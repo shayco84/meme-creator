@@ -29,10 +29,13 @@ function navBarItemClicked(elNavBarItem, page) {
         let elCurImg = document.querySelector(`#gallery-memes #${gMeme.selectedImgId}`)
         renderMemeEditor(elCurImg)
     } else {
-        toggleGalleryAndMemeEditor()
+        renderGallery()
     }
 }
 
 function galleryImgClicked(elImg) {
+    let elNavBarEditorItem = document.querySelector('.nav-bar-menu .menu-item-editor')
+    renderActiveNavBarItem(elNavBarEditorItem)
+    gMeme.selectedImgId = elImg.id
     renderMemeEditor(elImg)
 }

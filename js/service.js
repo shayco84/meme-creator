@@ -33,7 +33,7 @@ let gImgs = [
 
 
 let gMeme = {
-    selectedImgId: 4,
+    selectedImgId: 'img-4',
 
     top: {
         txt: '',
