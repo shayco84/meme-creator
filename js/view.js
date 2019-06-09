@@ -41,12 +41,15 @@ function renderMemeTexts() {
         gCtx.font         = `${gMeme[line].fontSize} ${gMeme[line].fontFamily}`
         gCtx.textAlign    = gMeme[line].align
         gCtx.fillStyle    = gMeme[line].color
+        gCtx.strokeStyle  = 'black'
+        gCtx.lineWidth    = 10
         gCtx.textBaseline = "bottom"
         let y
         if (line === 'top'   ) y = 60
         if (line === 'middle') y = +gCanvas.height / 2 + 40
         if (line === 'bottom') y = +gCanvas.height
-        gCtx.fillText(gMeme[line].txt, +gCanvas.width / 2, y);
+        gCtx.strokeText(gMeme[line].txt, +gCanvas.width / 2, y)
+        gCtx.fillText  (gMeme[line].txt, +gCanvas.width / 2, y)
     }
 }
 
