@@ -366,7 +366,7 @@ h1{
         flex-direction: column;
         position: absolute;
         top:110px;
-        right: 0;
+        right: -800px;
         display: none;
         background: #1e1e1e;
         z-index: 1;
@@ -375,7 +375,9 @@ h1{
     .menu-item{
         padding: 10px 10px;
         border: none;
-        width: 50vw;
+        width: 100vw;
+        font-size: 36px;
+        margin-bottom: 50px;
     }
 
     .nav-bar{
@@ -398,4 +400,6 @@ h1{
 
 .show{
     display: flex;
+    right: 0;
+    transition: right 0.8s;
 }
