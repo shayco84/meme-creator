@@ -45,5 +45,4 @@ function galleryImgClicked(elImg) {
 function chooseLineClicked(line) {
     gMeme.curLine = line
     renderChooseLineBtn(line)
-
 }

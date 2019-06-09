@@ -151,8 +151,6 @@ h1{
     flex-direction: row;
     justify-content: center;
     margin: 40px 0;
-    /*padding-left: 10px;*/
-    /*padding-right: 10px;*/
 }
 
 .meme-canvas {
@@ -175,12 +173,20 @@ h1{
 
 .row-editor label {
     text-align: center;
+    color: #58c93a;
 }
 
 .row-editor input {
+   display: block;
     margin-bottom: 20px;
     line-height: 20px;
     border: 1px solid #58c93a;
+    color: #58c93a;
+}
+
+.row-editor input::placeholder {
+    color: #58c93a;
+    opacity: 0.5;
 }
 
 .row-editor-btn-container {
@@ -208,6 +214,7 @@ h1{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown-select-line-container:hover .dropdown-select-line-btn img {
     background-color: #3e8e41;
+    background-size: unset;
 }
 
 .dropdown-select-line-btn img, .row-editor-btn img {
@@ -259,7 +266,7 @@ h1{
     text-align: center;
 }
 
-.download-meme-button:hover, .row-editor-btn:hover {
+.download-meme-button:hover{
     background-color: green;
 }
 /* =============================================== */

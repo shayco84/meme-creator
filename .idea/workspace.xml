@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="324d56d2-8990-4170-a27f-45ae300361b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/app/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/view.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="165" column="12" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="12" />
+            <state relative-caret-position="278">
+              <caret line="179" column="18" selection-start-line="179" selection-start-column="18" selection-end-line="179" selection-end-column="18" />
               <folding>
                 <element signature="e#301#341#0" />
               </folding>
@@ -35,12 +34,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="268">
+              <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -49,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            <state relative-caret-position="402">
+              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -58,17 +56,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+            <state relative-caret-position="124">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="326">
+              <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -97,7 +95,12 @@
       <find>search</find>
       <find>console</find>
       <find>gCanvas</find>
+      <find>input</find>
+      <find>border</find>
       <find>canvas</find>
+      <find>dropdown-select-line-btn</find>
+      <find>hover</find>
+      <find>background-co</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,12 +116,12 @@
         <option value="$PROJECT_DIR$/js/meme-editor-controller.js" />
         <option value="$PROJECT_DIR$/meme-editor.html" />
         <option value="$PROJECT_DIR$/css/meme-editor.css" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/util-service.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/controller.js" />
         <option value="$PROJECT_DIR$/js/service.js" />
+        <option value="$PROJECT_DIR$/js/controller.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/view.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -151,6 +154,12 @@
               <item name="meme-creator" type="b2602c69:ProjectViewProjectNode" />
               <item name="meme-creator" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meme-creator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meme-creator" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="meme-creator" type="b2602c69:ProjectViewProjectNode" />
@@ -199,7 +208,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559809168739</updated>
-      <workItem from="1559809173501" duration="38550000" />
+      <workItem from="1559809173501" duration="51904000" />
     </task>
     <task id="LOCAL-00001" summary="Initial layout for Meme-Editor page">
       <created>1559812350228</created>
@@ -278,18 +287,32 @@
       <option name="project" value="LOCAL" />
       <updated>1559975833337</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="line editor changes">
+      <created>1560052291504</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560052291504</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Line Editor changed to a single line, still contains a bug in which the buttons of the choose line to edit have more green filling than needed">
+      <created>1560078142051</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560078142051</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38550000" />
+    <option name="totallyTimeSpent" value="51904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18307997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18307997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" weight="0.32941177" />
@@ -341,7 +364,9 @@
     <MESSAGE value="Meme editor top bottom and middle lines - working :)" />
     <MESSAGE value="Integrating Tals section" />
     <MESSAGE value="Nav bar fixed ('about' and 'contact' tabs are still not supported, both lead to the 'gallery' tab)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nav bar fixed ('about' and 'contact' tabs are still not supported, both lead to the 'gallery' tab)" />
+    <MESSAGE value="line editor changes" />
+    <MESSAGE value="Line Editor changed to a single line, still contains a bug in which the buttons of the choose line to edit have more green filling than needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Line Editor changed to a single line, still contains a bug in which the buttons of the choose line to edit have more green filling than needed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../../../Design2LivePage/design-2-live-page/index.html">
@@ -403,28 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="165" column="12" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="12" />
-          <folding>
-            <element signature="e#301#341#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/util-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -435,24 +438,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller.js">
+    <entry file="file://$PROJECT_DIR$/js/service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        <state relative-caret-position="124">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/service.js">
+    <entry file="file://$PROJECT_DIR$/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        <state relative-caret-position="402">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="326">
+          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="179" column="18" selection-start-line="179" selection-start-column="18" selection-end-line="179" selection-end-column="18" />
+          <folding>
+            <element signature="e#301#341#0" />
+          </folding>
         </state>
       </provider>
     </entry>
