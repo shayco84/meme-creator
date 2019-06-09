@@ -33,7 +33,7 @@ function renderBaseImg(elImg) {
 }
 
 function renderMemeTexts() {
-    let elMemes = document.querySelector("#gallery-memes")
+    let elMemes = document.querySelector(".gallery-memes")
     let elCurImg = elMemes.querySelector(`#${gMeme.selectedImgId}`)
     renderBaseImg(elCurImg)
     let lines = ["top", "middle", "bottom"]
@@ -51,7 +51,7 @@ function renderMemeTexts() {
 }
 
 function renderFilteredGallery(filtered) {
-    let strHtml = `<ul id="gallery-memes">\n`
+    let strHtml = `<ul class="gallery-memes">\n`
     for (let img of filtered) {
         strHtml += `<li class="gallery-meme"><img id="img-${img.id}" onclick="galleryImgClicked(this)" src="${img.url}" alt=""></li>\n`
     }

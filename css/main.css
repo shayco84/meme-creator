@@ -139,28 +139,31 @@ h1{
     margin: 0 auto;
 }
 
+.gallery-memes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
 .gallery-meme{
-    float: left;
-    margin: 5px;
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 128px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    margin-bottom: 10px;
     /* object-fit: contain; */
     object-position: 50% 50%;
 }
 
-#gallery-memes img{
-    width: 120px;
-    height: 120px;
+.gallery-memes img{
+    width: 100%;
 }
 
-#gallery-memes img:hover{
+.gallery-memes img:hover{
     opacity: 0.8;
 }
-
-
 
 .search-bar{
     display: flex;
@@ -350,13 +353,11 @@ h1{
 }
 
 .fas.fa-bars{
-    position: fixed;
-    top:50px;
-    right:33px;
     color: white;
     display:none;
     font-size: 30px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 

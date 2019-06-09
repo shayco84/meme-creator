@@ -40,25 +40,25 @@ let gMeme = {
     top: {
         txt: '',
         fontSize: '60px',
-        fontFamily: 'Arial',
+        fontFamily: 'Impact',
         align: 'center',
-        color: 'black',
+        color: 'white',
     },
 
     bottom: {
         txt: '',
         fontSize: '60px',
-        fontFamily: 'Arial',
+        fontFamily: 'Impact',
         align: 'center',
-        color: 'black',
+        color: 'white',
     },
 
     middle: {
         txt: '',
         fontSize: '60px',
-        fontFamily: 'Arial',
+        fontFamily: 'Impact',
         align: 'center',
-        color: 'black',
+        color: 'white',
     }
 }
 

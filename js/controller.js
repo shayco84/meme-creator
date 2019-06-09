@@ -30,7 +30,7 @@ function navBarItemClicked(elNavBarItem, page) {
     renderActiveNavBarItem(elNavBarItem)
     openMenu()
     if (page === 'editor') {
-        let elCurImg = document.querySelector(`#gallery-memes #${gMeme.selectedImgId}`)
+        let elCurImg = document.querySelector(`.gallery-memes #${gMeme.selectedImgId}`)
         renderMemeEditor(elCurImg)
     } else if (page === 'gallery') {
         renderGallery()
