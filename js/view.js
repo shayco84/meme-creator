@@ -1,7 +1,7 @@
 'use strict'
 
-let gCanvas = document.querySelector(".meme-canvas");
-let gCtx = gCanvas.getContext("2d");
+let gCanvas;
+let gCtx;
 
 function renderMemeEditor(elImg) {
     gMeme.selectedImgId = elImg.id
@@ -17,6 +17,7 @@ function toggleGalleryAndMemeEditor() {
 }
 
 function renderBaseImg(elImg) {
+    elImg.crossOrigin = "anonymous";
     gCanvas.width = elImg.width;
     gCanvas.height = elImg.height;
     gCtx.drawImage(elImg, 0, 0);

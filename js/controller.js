@@ -1,7 +1,8 @@
 'use strict'
 
 function onInit() {
-
+    gCanvas = document.querySelector(".meme-canvas");
+    gCtx = gCanvas.getContext("2d");
 }
 
 function onSearch(){
@@ -9,6 +10,7 @@ function onSearch(){
 }
 
 function downloadMemeClicked(elLink) {
+    // console.log("elLink = ", elLink)
     downloadMeme(elLink)
 }
 
