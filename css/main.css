@@ -169,6 +169,10 @@ h1{
     display: flex;
     justify-content: center;
 }
+
+.search-input {
+    padding: 5px;
+}
 /* =============================================== */
 /* =============================================== */
 /* ==================== Editor =================== */
@@ -181,7 +185,7 @@ h1{
 .editor-page-container {
     margin: 0 auto;
     display: block;
-    align-content: center;
+    width: fit-content;
 }
 
 .row-editor, .download-meme-button, .meme-canvas {
