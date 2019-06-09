@@ -10,7 +10,6 @@ function onSearch(){
 }
 
 function downloadMemeClicked(elLink) {
-    // console.log("elLink = ", elLink)
     downloadMeme(elLink)
 }
 

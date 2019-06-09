@@ -62,3 +62,7 @@ function renderActiveNavBarItem(elNavBarSelectedItem) {
     }
     elNavBarSelectedItem.classList.add('active')
 }
+
+function openMenu(){
+    document.querySelector('.nav-bar-menu').classList.toggle('show');
+}

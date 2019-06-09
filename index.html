@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meme Creator</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
 <body onload="onInit()">
@@ -23,7 +24,7 @@
                 </h1>
             </div>
             <div class="flex-column-container">
-                <ul class="nav-bar-menu">
+                <ul class="nav-bar-menu flex">
                     <li onclick="navBarItemClicked(this, 'gallery')"
                         class="menu-item font-lato font-weight-700 font-size-16 active">
                         Gallery
@@ -41,6 +42,7 @@
                         Contact
                     </li>
                 </ul>
+                <i onclick="openMenu()" class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -140,8 +142,8 @@
                     </div>
                     
                     <a onclick="downloadMemeClicked(this)" href="#" download="my-meme.jpg">
-                        <!-- <button class="download-meme-button font-lato font-weight-700 font-size-16">Download Meme</button> -->
-                        download
+                        <button class="download-meme-button font-lato font-weight-700 font-size-16">Download Meme</button>
+                        
                     </a>
                             
 
