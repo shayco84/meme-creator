@@ -65,6 +65,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .logo{
@@ -361,7 +362,7 @@ h1{
     .nav-bar-menu{
         flex-direction: column;
         position: absolute;
-        top:110px;
+        top:100px;
         right: -800px;
         display: none;
         background: #1e1e1e;
@@ -388,6 +389,6 @@ h1{
 
 .show{
     display: flex;
-    right: 0;
+    right: -10px;
     transition: right 0.8s;
 }
