@@ -24,11 +24,13 @@ function onKeyUpMemeText(elTextRow, event, line) {
 }
 
 function navBarItemClicked(elNavBarItem, page) {
+    // TODO - add support to About and Contact tabs
+    if (page === 'about' || page === 'contact') return
     renderActiveNavBarItem(elNavBarItem)
     if (page === 'editor') {
         let elCurImg = document.querySelector(`#gallery-memes #${gMeme.selectedImgId}`)
         renderMemeEditor(elCurImg)
-    } else {
+    } else if (page === 'gallery') {
         renderGallery()
     }
 }

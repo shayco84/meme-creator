@@ -33,28 +33,28 @@ let gImgs = [
 
 
 let gMeme = {
-    selectedImgId: 'img-4',
+    selectedImgId: 'img-4', // default image if user moves to Editor tab without selecting an img.
 
     top: {
         txt: '',
-        fontSize: 20,
-        font: '60px Arial',
+        fontSize: '60px',
+        fontFamily: 'Arial',
         align: 'center',
         color: 'black',
     },
 
     bottom: {
         txt: '',
-        fontSize: 20,
-        font: '60px Arial',
+        fontSize: '60px',
+        fontFamily: 'Arial',
         align: 'center',
         color: 'black',
     },
 
     middle: {
         txt: '',
-        fontSize: 20,
-        font: '60px Arial',
+        fontSize: '60px',
+        fontFamily: 'Arial',
         align: 'center',
         color: 'black',
     }

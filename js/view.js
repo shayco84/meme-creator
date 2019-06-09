@@ -8,7 +8,7 @@ function renderMemeEditor(elImg) {
     document.querySelector('.editor-page-container').classList.remove('display-none')
     renderBaseImg(elImg)
 }
-3
+
 function renderGallery() {
     document.querySelector('.gallery-page-container').classList.remove('display-none')
     document.querySelector('.editor-page-container').classList.add('display-none')
@@ -26,7 +26,7 @@ function renderMemeTexts() {
     renderBaseImg(elCurImg)
     let lines = ["top", "middle", "bottom"]
     for (let line of lines) {
-        gCtx.font         = gMeme[line].font
+        gCtx.font         = `${gMeme[line].fontSize} ${gMeme[line].fontFamily}`
         gCtx.textAlign    = gMeme[line].align
         gCtx.fillStyle    = gMeme[line].color
         gCtx.textBaseline = "bottom"
