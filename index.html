@@ -13,7 +13,7 @@
 <body onload="onInit()">
 
     <nav class="nav-bar">
-        <div class="main-container">
+        <div class="main-gallery-container">
             <div class="flex-column-container">
                 <h1 class="logo logo-header font-logo font-logo-regular">
                     <span class="logo-capitalize">M</span>
@@ -26,11 +26,11 @@
             <div class="flex-column-container">
                 <ul class="nav-bar-menu flex">
                     <li onclick="navBarItemClicked(this, 'gallery')"
-                        class="menu-item font-lato font-weight-700 font-size-16 active">
+                        class="menu-item menu-item-gallery font-lato font-weight-700 font-size-16 active">
                         Gallery
                     </li>
                     <li onclick="navBarItemClicked(this, 'editor')"
-                        class="menu-item font-lato font-weight-700 font-size-16">
+                        class="menu-item menu-item-editor font-lato font-weight-700 font-size-16">
                         Editor
                     </li>
                     <li onclick="navBarItemClicked(this, 'about')"
@@ -123,7 +123,7 @@
         </section>
     </section>
     <section class="editor-page-container display-none">
-        <div class="main-container">
+        <div class="main-editor-container">
             <div class="editor-container">
 
                 <canvas class="meme-canvas"></canvas>

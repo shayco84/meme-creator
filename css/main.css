@@ -45,15 +45,23 @@ h1{
 
 }
 
-.main-container {
-   display: flex;
-   justify-content: space-between;
+.main-editor-container {
+    width: 980px;
+    margin: 0 auto;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-gallery-container{
+    display: flex;
+    justify-content: space-between;
     height: 110px;
     padding: 10px;
     margin: 0 auto;
 }
 
-.nav-bar .main-container {
+.nav-bar .main-editor-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -151,7 +159,7 @@ h1{
 /* ==================== Editor =================== */
 /* =============================================== */
 /* =============================================== */
-.posts .main-container {
+.posts .main-editor-container {
     border: 1px solid #e1e0e0;
 }
 
