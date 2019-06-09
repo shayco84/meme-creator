@@ -1,7 +1,7 @@
 'use strict'
 
-let gCanvas = document.querySelector(".meme-canvas");
-let gCtx = gCanvas.getContext("2d");
+let gCanvas;
+let gCtx;
 
 function renderMemeEditor(elImg) {
     document.querySelector('.gallery-page-container').classList.add('display-none')
@@ -15,6 +15,7 @@ function renderGallery() {
 }
 
 function renderBaseImg(elImg) {
+    elImg.crossOrigin = "anonymous";
     gCanvas.width = elImg.width;
     gCanvas.height = elImg.height;
     gCtx.drawImage(elImg, 0, 0);
@@ -58,6 +59,10 @@ function renderActiveNavBarItem(elNavBarSelectedItem) {
         elNavBarItem.classList.remove('active')
     }
     elNavBarSelectedItem.classList.add('active')
+}
+
+function openMenu(){
+    document.querySelector('.nav-bar-menu').classList.toggle('show');
 }
 
 function renderChooseLineBtn(line) {

@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meme Creator</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
-<body>
+
+<body onload="onInit()">
+
     <nav class="nav-bar">
         <div class="main-container">
             <div class="flex-column-container">
@@ -21,28 +24,28 @@
                 </h1>
             </div>
             <div class="flex-column-container">
-                <ul class="nav-bar-menu">
+                <ul class="nav-bar-menu flex">
                     <li onclick="navBarItemClicked(this, 'gallery')"
-                        class="menu-item menu-item-gallery font-lato font-weight-700 font-size-16 active">
+                        class="menu-item font-lato font-weight-700 font-size-16 active">
                         Gallery
                     </li>
                     <li onclick="navBarItemClicked(this, 'editor')"
-                        class="menu-item menu-item-editor font-lato font-weight-700 font-size-16">
+                        class="menu-item font-lato font-weight-700 font-size-16">
                         Editor
                     </li>
                     <li onclick="navBarItemClicked(this, 'about')"
-                        class="menu-item menu-item-about font-lato font-weight-700 font-size-16">
+                        class="menu-item font-lato font-weight-700 font-size-16">
                         About
                     </li>
                     <li onclick="navBarItemClicked(this, 'contact')"
-                        class="menu-item menu-item-contact font-lato font-weight-700 font-size-16">
+                        class="menu-item font-lato font-weight-700 font-size-16">
                         Contact
                     </li>
                 </ul>
+                <i onclick="openMenu()" class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
-
     <section class="gallery-page-container">
         <header>
             <h1>
@@ -65,41 +68,65 @@
             </div>
             <div class="gallery-container">
                 <ul id="gallery-memes">
-                    <li class="gallery-meme"><img id="img-1"  onclick="galleryImgClicked(this)" src="img/memes/003.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-2"  onclick="galleryImgClicked(this)" src="img/memes/004.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-3"  onclick="galleryImgClicked(this)" src="img/memes/005.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-4"  onclick="galleryImgClicked(this)" src="img/memes/006.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-5"  onclick="galleryImgClicked(this)" src="img/memes/12.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-6"  onclick="galleryImgClicked(this)" src="img/memes/19.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-7"  onclick="galleryImgClicked(this)" src="img/memes/2.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-8"  onclick="galleryImgClicked(this)" src="img/memes/5.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-9"  onclick="galleryImgClicked(this)" src="img/memes/8.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-10" onclick="galleryImgClicked(this)" src="img/memes/9.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-11" onclick="galleryImgClicked(this)" src="img/memes/Ancient-Aliens.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-12" onclick="galleryImgClicked(this)" src="img/memes/One-Does-Not-Simply.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-13" onclick="galleryImgClicked(this)" src="img/memes/Oprah-You-Get-A.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-14" onclick="galleryImgClicked(this)" src="img/memes/X-Everywhere.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-15" onclick="galleryImgClicked(this)" src="img/memes/drevil.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-16" onclick="galleryImgClicked(this)" src="img/memes/img11.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-17" onclick="galleryImgClicked(this)" src="img/memes/img12.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-18" onclick="galleryImgClicked(this)" src="img/memes/img2.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-19" onclick="galleryImgClicked(this)" src="img/memes/img4.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-20" onclick="galleryImgClicked(this)" src="img/memes/img5.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-21" onclick="galleryImgClicked(this)" src="img/memes/img6.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-22" onclick="galleryImgClicked(this)" src="img/memes/leo.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-23" onclick="galleryImgClicked(this)" src="img/memes/meme1.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-24" onclick="galleryImgClicked(this)" src="img/memes/patrick.jpg" alt=""></li>
-                    <li class="gallery-meme"><img id="img-25" onclick="galleryImgClicked(this)" src="img/memes/putin.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-1" onclick="galleryImgClicked(this)" src="img/memes/003.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-2" onclick="galleryImgClicked(this)" src="img/memes/004.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-3" onclick="galleryImgClicked(this)" src="img/memes/005.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-4" onclick="galleryImgClicked(this)" src="img/memes/006.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-5" onclick="galleryImgClicked(this)" src="img/memes/12.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-6" onclick="galleryImgClicked(this)" src="img/memes/19.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-7" onclick="galleryImgClicked(this)" src="img/memes/2.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-8" onclick="galleryImgClicked(this)" src="img/memes/5.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-9" onclick="galleryImgClicked(this)" src="img/memes/8.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-10" onclick="galleryImgClicked(this)" src="img/memes/9.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-11" onclick="galleryImgClicked(this)"
+                            src="img/memes/Ancient-Aliens.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-12" onclick="galleryImgClicked(this)"
+                            src="img/memes/One-Does-Not-Simply.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-13" onclick="galleryImgClicked(this)"
+                            src="img/memes/Oprah-You-Get-A.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-14" onclick="galleryImgClicked(this)"
+                            src="img/memes/X-Everywhere.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-15" onclick="galleryImgClicked(this)"
+                            src="img/memes/drevil.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-16" onclick="galleryImgClicked(this)"
+                            src="img/memes/img11.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-17" onclick="galleryImgClicked(this)"
+                            src="img/memes/img12.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-18" onclick="galleryImgClicked(this)" src="img/memes/img2.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-19" onclick="galleryImgClicked(this)" src="img/memes/img4.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-20" onclick="galleryImgClicked(this)" src="img/memes/img5.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-21" onclick="galleryImgClicked(this)" src="img/memes/img6.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-22" onclick="galleryImgClicked(this)" src="img/memes/leo.jpg"
+                            alt=""></li>
+                    <li class="gallery-meme"><img id="img-23" onclick="galleryImgClicked(this)"
+                            src="img/memes/meme1.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-24" onclick="galleryImgClicked(this)"
+                            src="img/memes/patrick.jpg" alt=""></li>
+                    <li class="gallery-meme"><img id="img-25" onclick="galleryImgClicked(this)"
+                            src="img/memes/putin.jpg" alt=""></li>
                 </ul>
             </div>
         </section>
     </section>
-
     <section class="editor-page-container display-none">
         <div class="main-container">
             <div class="editor-container">
 
-                <canvas class="meme-canvas" ></canvas>
+                <canvas class="meme-canvas"></canvas>
 
                 <div class="row-editor-and-download-btn-container">
                     <div class="row-editor font-lato font-weight-700 font-size-21">
@@ -137,15 +164,21 @@
                         </div>
                     </div>
 
-                    <button class="download-meme-button font-lato font-weight-700 font-size-16">
-                        Download Meme
-                        <a href="#" onclick="downloadMemeClicked(this)" download="my-meme.jpg"> </a>
-                    </button>
+                    <a onclick="downloadMemeClicked(this)" href="#" download="my-meme.jpg">
+                        <button class="download-meme-button font-lato font-weight-700 font-size-16">Download Meme</button>
+
+                    </a>
+
+
+
+
+
                 </div>
 
             </div>
         </div>
     </section>
+
 
     <script src="js/service.js"></script>
     <script src="js/util-service.js"></script>

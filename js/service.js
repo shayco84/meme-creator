@@ -72,8 +72,8 @@ function search() {
 }
 
 function downloadMeme(elLink){
-    let canvas = document.querySelector('.meme-canvas')
-    let imgContent = canvas.toDataURL('image/jpeg');
-    elLink.href = imgContent
+    elLink.href = gCanvas.toDataURL();
+    elLink.download = "my-meme.jpg"
 }
+
 

@@ -46,11 +46,11 @@ h1{
 }
 
 .main-container {
-    width: 980px;
+   display: flex;
+   justify-content: space-between;
+    height: 110px;
+    padding: 10px;
     margin: 0 auto;
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .nav-bar .main-container {
@@ -63,6 +63,10 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.logo{
+    margin-right: 20px;
 }
 
 .logo-header {
@@ -81,7 +85,13 @@ h1{
 }
 
 .nav-bar-menu {
-    display: inline-block;
+    /* display: inline-block; */
+    /* display: flex; */
+
+}
+
+.flex{
+    display: flex;
 }
 
 .menu-item {
@@ -110,7 +120,7 @@ h1{
 /* =============================================== */
 /* =============================================== */
 .gallery-meme{
-    float: right;
+    float: left;
     margin: 5px;
     width: 120px;
     height: 120px;
@@ -145,7 +155,6 @@ h1{
     border: 1px solid #e1e0e0;
 }
 
-
 .editor-container {
     display: flex;
     flex-direction: row;
@@ -177,7 +186,7 @@ h1{
 }
 
 .row-editor input {
-   display: block;
+    display: block;
     margin-bottom: 20px;
     line-height: 20px;
     border: 1px solid #58c93a;
@@ -328,4 +337,50 @@ h1{
 
 .font-size-28 {
     font-size: 28px;
+}
+
+.fas.fa-bars{
+    position: fixed;
+    top:50px;
+    right:33px;
+    color: white;
+    display:none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media(max-width:800px){
+    .nav-bar-menu{
+        flex-direction: column;
+        position: absolute;
+        top:143px;
+        right: 0;
+        display: none;
+        background: #1e1e1e;
+        z-index: 1;
+        height: 100vh;
+    }
+    .menu-item{
+        padding: 10px 10px;
+        border: none;
+        width: 100vw;
+
+
+    }
+    .fas.fa-bars{
+        display: block;
+        /* position: fixed;
+        top:52px;
+        right:33px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer; */
+    }
+
+
+}
+
+.show{
+    display: flex;
 }
