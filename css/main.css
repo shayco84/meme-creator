@@ -55,15 +55,6 @@ h1{
     padding-right: 10px;
 }
 
-.main-gallery-container{
-    display: flex;
-    justify-content: space-between;
-    height: 110px;
-    padding: 10px;
-    margin: 0 auto;
-    width: auto;
-}
-
 .nav-bar .main-editor-container {
     display: flex;
     flex-direction: row;
@@ -172,6 +163,7 @@ h1{
 
 .search-input {
     padding: 5px;
+    max-width: 330px;
 }
 /* =============================================== */
 /* =============================================== */
@@ -391,15 +383,7 @@ h1{
     .fas.fa-bars{
         display: block;
         color: #58c93a;
-        /* position: fixed;
-        top:52px;
-        right:33px;
-        color: white;
-        font-size: 30px;
-        cursor: pointer; */
     }
-
-
 }
 
 .show{
