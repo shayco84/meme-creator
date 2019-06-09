@@ -59,3 +59,12 @@ function renderActiveNavBarItem(elNavBarSelectedItem) {
     }
     elNavBarSelectedItem.classList.add('active')
 }
+
+function renderChooseLineBtn(line) {
+    let elLineSelectImg = document.querySelector(".dropdown-select-line-btn img")
+    elLineSelectImg.src = `img/app/icon-editor-line-${line}.png`
+    let elEditorTxtLine = document.querySelector("#editor-txt-input")
+    elEditorTxtLine.placeholder = `Enter ${line} row text here`
+    elEditorTxtLine.value = gMeme[line].txt
+
+}

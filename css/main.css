@@ -49,6 +49,8 @@ h1{
     width: 980px;
     margin: 0 auto;
     display: block;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav-bar .main-container {
@@ -139,28 +141,18 @@ h1{
 /* ==================== Editor =================== */
 /* =============================================== */
 /* =============================================== */
-.posts .main-container, .next-previous-wrapper {
+.posts .main-container {
     border: 1px solid #e1e0e0;
 }
 
-.previous-btn, .next-btn {
-    line-height: 60px;
-    color: #818181;
-    text-transform: uppercase;
-}
-
-.next-previous-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 10px;
-}
 
 .editor-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 40px 0;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
 }
 
 .meme-canvas {
@@ -170,24 +162,85 @@ h1{
 .row-editor {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     color: #4f4e4e;
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 50px;
     margin-right: 80px;
+    border-radius: 25px;
+    border: 2px solid #58c93a;
+    padding: 10px;
+}
+
+.row-editor label {
+    text-align: center;
 }
 
 .row-editor input {
     margin-bottom: 20px;
+    line-height: 20px;
+    border: 1px solid #58c93a;
 }
 
-.post-paragraph {
-    color: #606060;
-    line-height: 20px;
-    margin-right: 20px;
-    height: 120px;
-    overflow: hidden;
+.row-editor-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row-editor-btn {
+    color: #58c93a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dropdown-select-line-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-select-line-container:hover .dropdown-select-line-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-select-line-container:hover .dropdown-select-line-btn img {
+    background-color: #3e8e41;
+}
+
+.dropdown-select-line-btn img, .row-editor-btn img {
+    height: 40px;
+    width: 40px;
+    /* object-fit: contain; */
+    object-position: 50% 50%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-select-line-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-select-line-content button {
+    color: black;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-select-line-content button:hover img{
+    background-color: #3e8e41;
 }
 
 .row-editor-and-download-btn-container {
@@ -206,7 +259,7 @@ h1{
     text-align: center;
 }
 
-.download-meme-button:hover {
+.download-meme-button:hover, .row-editor-btn:hover {
     background-color: green;
 }
 /* =============================================== */

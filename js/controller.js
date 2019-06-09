@@ -17,9 +17,9 @@ function uploadUserImage() {
     // http://jsfiddle.net/z3JtC/4
 }
 
-function onKeyUpMemeText(elTextRow, event, line) {
+function onKeyUpMemeText(elTextRow, event) {
     // TODO - validate user input is not Esc or some other weird key with event.keyCode
-    gMeme[line].txt = elTextRow.value
+    gMeme[gMeme.curLine].txt = elTextRow.value
     renderMemeTexts()
 }
 
@@ -40,4 +40,10 @@ function galleryImgClicked(elImg) {
     renderActiveNavBarItem(elNavBarEditorItem)
     gMeme.selectedImgId = elImg.id
     renderMemeEditor(elImg)
+}
+
+function chooseLineClicked(line) {
+    gMeme.curLine = line
+    renderChooseLineBtn(line)
+
 }

@@ -35,6 +35,8 @@ let gImgs = [
 let gMeme = {
     selectedImgId: 'img-4', // default image if user moves to Editor tab without selecting an img.
 
+    curLine: 'top',
+
     top: {
         txt: '',
         fontSize: '60px',
