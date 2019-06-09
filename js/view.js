@@ -16,9 +16,20 @@ function renderGallery() {
 
 function renderBaseImg(elImg) {
     elImg.crossOrigin = "anonymous";
-    gCanvas.width = elImg.width;
-    gCanvas.height = elImg.height;
-    gCtx.drawImage(elImg, 0, 0);
+    let displayWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    console.log('displayWidth = ', displayWidth)
+    if (displayWidth < elImg.width) {
+        gCanvas.width = displayWidth - 20
+        gCanvas.height = elImg.height * (displayWidth / elImg.width);
+    } else {
+        gCanvas.width = elImg.width
+        gCanvas.height = elImg.height
+    }
+    gCtx.drawImage(elImg, 0, 0, elImg.width, elImg.height, 0, 0, gCanvas.width, gCanvas.height);
+    document.querySelector(".row-editor").style.width = gCanvas.width + 'px'
+    // console.log('document.querySelector(".editor-container").width = ', document.querySelector(".editor-container").width)
+    // console.log('gCanvas.width = ', gCanvas.width)
+
 }
 
 function renderMemeTexts() {
@@ -71,5 +82,5 @@ function renderChooseLineBtn(line) {
     let elEditorTxtLine = document.querySelector("#editor-txt-input")
     elEditorTxtLine.placeholder = `Enter ${line} row text here...`
     elEditorTxtLine.value = gMeme[line].txt
-
+    elEditorTxtLine.focus()
 }

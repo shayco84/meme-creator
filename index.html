@@ -123,60 +123,39 @@
         </section>
     </section>
     <section class="editor-page-container display-none">
-        <div class="main-editor-container">
-            <div class="editor-container">
-
-                <canvas class="meme-canvas"></canvas>
-
-                <div class="row-editor-and-download-btn-container">
-                    <div class="row-editor font-lato font-weight-700 font-size-21">
-                        <label for="editor-txt-input">Meme Editor
-                            <input onkeyup="onKeyUpMemeText(this, event)" type="text" id="editor-txt-input"
-                               class="font-lato font-weight-700 font-size-21"
-                               name="editor-txt-input" placeholder="Enter top row text here..."
-                            />
-                        </label>
-                        <div class="row-editor-btn-container">
-                            <div class="dropdown-select-line-container">
-                                <button class="dropdown-select-line-btn row-editor-btn font-lato
-                                font-weight-700 font-size-18" >
-                                    <img src="img/app/icon-editor-line-top.png" alt="">
-                                </button>
-                                <div class="dropdown-select-line-content font-lato font-weight-700 font-size-18">
-                                    <button class="row-editor-btn font-lato font-weight-700 font-size-18"
-                                            onclick="chooseLineClicked('top')">
-                                        <img src="img/app/icon-editor-line-top.png" alt="">
-                                    </button>
-                                    <button class="row-editor-btn font-lato font-weight-700 font-size-18"
-                                            onclick="chooseLineClicked('middle')">
-                                        <img src="img/app/icon-editor-line-middle.png" alt="">
-                                    </button>
-                                    <button class="row-editor-btn font-lato font-weight-700 font-size-18"
-                                            onclick="chooseLineClicked('bottom')">
-                                        <img src="img/app/icon-editor-line-bottom.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <!--  <input type="image" src="" class="row-editor-btn choose-line-btn"></button>-->
-                            <!--  <input type="image" src="" class="row-editor-btn font-color-btn" ></button>-->
-                            <!--  <input type="image" src="" class="row-editor-btn font-size-btn"  ></button>-->
-                            <!--  <input type="image" src="" class="row-editor-btn font-family-btn"></button>-->
+        <canvas class="meme-canvas"></canvas>
+        <div class="row-editor font-lato font-weight-700 font-size-21">
+                <input onkeyup="onKeyUpMemeText(this, event)" type="text" id="editor-txt-input"
+                       class="font-lato font-weight-700 font-size-21"
+                       name="editor-txt-input" placeholder="Enter top row text here..."
+                />
+                <div class="row-editor-btn-container">
+                    <div class="dropdown-select-line-container">
+                        <button class="dropdown-select-line-btn row-editor-btn font-lato
+                        font-weight-700 font-size-18" >
+                            <img src="img/app/icon-editor-line-top.png" alt="">
+                        </button>
+                        <div class="dropdown-select-line-content font-lato font-weight-700 font-size-18">
+                            <button class="row-editor-btn font-lato font-weight-700 font-size-18"
+                                    onclick="chooseLineClicked('top')">
+                                <img src="img/app/icon-editor-line-top.png" alt="">
+                            </button>
+                            <button class="row-editor-btn font-lato font-weight-700 font-size-18"
+                                    onclick="chooseLineClicked('middle')">
+                                <img src="img/app/icon-editor-line-middle.png" alt="">
+                            </button>
+                            <button class="row-editor-btn font-lato font-weight-700 font-size-18"
+                                    onclick="chooseLineClicked('bottom')">
+                                <img src="img/app/icon-editor-line-bottom.png" alt="">
+                            </button>
                         </div>
                     </div>
-
-                    <a onclick="downloadMemeClicked(this)" href="#" download="my-meme.jpg">
-                        <button class="download-meme-button font-lato font-weight-700 font-size-16">Download Meme</button>
-
-                    </a>
-
-
-
-
-
                 </div>
-
             </div>
-        </div>
+        <a onclick="downloadMemeClicked(this)" href="#" download="my-meme.jpg">
+            <button class="download-meme-button font-lato font-weight-700 font-size-16">Download Meme</button>
+
+        </a>
     </section>
 
 
