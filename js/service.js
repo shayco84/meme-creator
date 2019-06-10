@@ -75,19 +75,12 @@ renderFilteredGallery(result)
 
 function onKeyUpSearchInput() {
     let value = document.querySelector('.search-input').value;
-    console.log(value)
     if (value === '') {
         renderFilteredGallery(gImgs)
     }
 }
 
-function downloadMeme(elLink) {
-    elLink.href = gCanvas.toDataURL();
-    elLink.download = "my-meme.jpg"
-}
-
 function updateDefaultFontSizeToFitCanvas(canvasHeight) {
-    console.log('canvasHeight = ', canvasHeight)
     let defaultFontSize = Math.floor(canvasHeight * FONT_TO_IMG_HEIGHT_RATIO)
     let lines = ["top", "middle", "bottom"]
     for (let line of lines) {
@@ -95,14 +88,14 @@ function updateDefaultFontSizeToFitCanvas(canvasHeight) {
     }
 }
 
-// function handleImageFromInput(ev, onImageReady) {
-//     document.querySelector('.share-container').innerHTML = ''
-//     var reader = new FileReader();
-
-//     reader.onload = function (event) {
-//         var img = new Image();
-//         img.onload = onImageReady.bind(null, img)
-//         img.src = event.target.result;
-//     }
-//     reader.readAsDataURL(ev.target.files[0]);
-// }
+function gMemeBackToDefault() {
+    gMeme.curLine = 'top'
+    let lines = ["top", "middle", "bottom"]
+    for (let line of lines) {
+        gMeme[line].txt        = ''
+        gMeme[line].fontSize   = '60px'
+        gMeme[line].fontFamily = 'Impact'
+        gMeme[line].align      = 'center'
+        gMeme[line].color      = 'white'
+    }
+}

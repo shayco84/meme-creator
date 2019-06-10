@@ -12,13 +12,15 @@ function onSearch(){
 }
 
 function downloadMemeClicked(elLink) {
-    downloadMeme(elLink)
+    elLink.href = gCanvas.toDataURL();
+    elLink.download = "my-meme.jpg"
 }
 
-function uploadUserImage() {
-    // https://stackoverflow.com/questions/13938686/can-i-load-a-local-file-into-an-html-canvas-element
-    // http://jsfiddle.net/z3JtC/4
-}
+// TODO - add support to upload file
+// function uploadUserImage() {
+//     // https://stackoverflow.com/questions/13938686/can-i-load-a-local-file-into-an-html-canvas-element
+//     // http://jsfiddle.net/z3JtC/4
+// }
 
 function onKeyUpMemeText(elTextRow, event) {
     // TODO - validate user input is not Esc or some other weird key with event.keyCode
@@ -29,13 +31,20 @@ function onKeyUpMemeText(elTextRow, event) {
 function navBarItemClicked(elNavBarItem, page) {
     // TODO - add support to About and Contact tabs
     if (page === 'about' || page === 'contact') return
+
+    // Editor view, and gMeme model - back to default:
+    gMemeBackToDefault()
+    document.getElementById('editor-txt-input').value = ''
+    renderChooseLineBtn('top')
+
     renderActiveNavBarItem(elNavBarItem)
-    openMenu()
+    toggleNavBarMenu()
     if (page === 'editor') {
         let elCurImg = document.querySelector(`.gallery-memes #${gMeme.selectedImgId}`)
         renderMemeEditor(elCurImg)
+        updateDefaultFontSizeToFitCanvas(gCanvas.height)
     } else if (page === 'gallery') {
-        renderGallery()
+        backToGalClicked()
     }
 }
 
@@ -61,3 +70,9 @@ function clearInput(){
 
 
 
+function backToGalClicked() {
+    gMemeBackToDefault()
+    document.getElementById('editor-txt-input').value = ''
+    renderChooseLineBtn('top')
+    renderGallery()
+}

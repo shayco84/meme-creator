@@ -64,11 +64,6 @@ function renderFilteredGallery(filtered) {
     document.querySelector('.gallery-container').innerHTML = strHtml
 }
 
-function uploadUserImage() {
-    // https://stackoverflow.com/questions/13938686/can-i-load-a-local-file-into-an-html-canvas-element
-    // http://jsfiddle.net/z3JtC/4
-}
-
 function renderActiveNavBarItem(elNavBarSelectedItem) {
     let elsNavBarItems = document.querySelectorAll('.nav-bar-menu .menu-item')
     for (let elNavBarItem of elsNavBarItems) {
@@ -77,8 +72,8 @@ function renderActiveNavBarItem(elNavBarSelectedItem) {
     elNavBarSelectedItem.classList.add('active')
 }
 
-function openMenu(){
-    document.querySelector('.nav-bar-menu').classList.toggle('show');
+function toggleNavBarMenu(){
+    document.querySelector('.nav-bar-menu').classList.toggle('show-nav-bar-menu');
 }
 
 function renderChooseLineBtn(line) {
