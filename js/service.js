@@ -81,11 +81,6 @@ function onKeyUpSearchInput() {
     }
 }
 
-function downloadMeme(elLink) {
-    elLink.href = gCanvas.toDataURL();
-    elLink.download = "my-meme.jpg"
-}
-
 function updateDefaultFontSizeToFitCanvas(canvasHeight) {
     console.log('canvasHeight = ', canvasHeight)
     let defaultFontSize = Math.floor(canvasHeight * FONT_TO_IMG_HEIGHT_RATIO)

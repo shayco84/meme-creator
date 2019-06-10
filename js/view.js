@@ -77,8 +77,8 @@ function renderActiveNavBarItem(elNavBarSelectedItem) {
     elNavBarSelectedItem.classList.add('active')
 }
 
-function openMenu(){
-    document.querySelector('.nav-bar-menu').classList.toggle('show');
+function toggleNavBarMenu(){
+    document.querySelector('.nav-bar-menu').classList.toggle('show-nav-bar-menu');
 }
 
 function renderChooseLineBtn(line) {

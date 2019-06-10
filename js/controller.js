@@ -10,7 +10,8 @@ function onSearch(){
 }
 
 function downloadMemeClicked(elLink) {
-    downloadMeme(elLink)
+    elLink.href = gCanvas.toDataURL();
+    elLink.download = "my-meme.jpg"
 }
 
 function uploadUserImage() {
@@ -28,7 +29,7 @@ function navBarItemClicked(elNavBarItem, page) {
     // TODO - add support to About and Contact tabs
     if (page === 'about' || page === 'contact') return
     renderActiveNavBarItem(elNavBarItem)
-    openMenu()
+    toggleNavBarMenu()
     if (page === 'editor') {
         let elCurImg = document.querySelector(`.gallery-memes #${gMeme.selectedImgId}`)
         renderMemeEditor(elCurImg)
