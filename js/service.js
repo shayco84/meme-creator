@@ -1,5 +1,9 @@
 'use strict'
 
+const MAX_IMG_DISPLAY_WIDTH    = 800
+const IMG_PADDING              = 10
+const FONT_TO_IMG_HEIGHT_RATIO = 0.10
+
 let gKeywords = { 'politics': 4, 'animal': 4, 'movie': 9, 'celebs': 4, 'child': 5, 'sport': 1 }
 
 let gImgs = [
@@ -29,8 +33,6 @@ let gImgs = [
     { id: 24, url: "img/memes/patrick.jpg", keyword: ['movie'] },
     { id: 25, url: "img/memes/putin.jpg", keyword: ['politics'] },
 ]
-
-
 
 let gMeme = {
     selectedImgId: 'img-4', // default image if user moves to Editor tab without selecting an img.
@@ -62,7 +64,6 @@ let gMeme = {
     }
 }
 
-
 function search() {
     var value = document.querySelector('.search-input').value;
     var result = gImgs.filter(function (img) {
@@ -76,4 +77,11 @@ function downloadMeme(elLink){
     elLink.download = "my-meme.jpg"
 }
 
-
+function updateDefaultFontSizeToFitCanvas(canvasHeight) {
+    console.log('canvasHeight = ', canvasHeight)
+    let defaultFontSize = Math.floor(canvasHeight * FONT_TO_IMG_HEIGHT_RATIO)
+    let lines = ["top", "middle", "bottom"]
+    for (let line of lines) {
+        gMeme[line].fontSize = defaultFontSize + 'px'
+    }
+}

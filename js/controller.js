@@ -41,7 +41,9 @@ function galleryImgClicked(elImg) {
     let elNavBarEditorItem = document.querySelector('.nav-bar-menu .menu-item-editor')
     renderActiveNavBarItem(elNavBarEditorItem)
     gMeme.selectedImgId = elImg.id
-    renderMemeEditor(elImg)
+    renderMemeEditor(elImg) // Sets gCanvas.height
+    updateDefaultFontSizeToFitCanvas(gCanvas.height)
+
 }
 
 function chooseLineClicked(line) {

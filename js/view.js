@@ -16,20 +16,20 @@ function renderGallery() {
 
 function renderBaseImg(elImg) {
     elImg.crossOrigin = "anonymous";
+
+    // fit img to screen if available display width is < MAX_IMG_DISPLAY_WIDTH, else set img width to MAX_IMG_DISPLAY_WIDTH
     let displayWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    console.log('displayWidth = ', displayWidth)
-    if (displayWidth < elImg.width) {
-        gCanvas.width = displayWidth - 20
-        gCanvas.height = elImg.height * (displayWidth / elImg.width);
-    } else {
-        gCanvas.width = elImg.width
-        gCanvas.height = elImg.height
-    }
+    if (displayWidth > MAX_IMG_DISPLAY_WIDTH) displayWidth = MAX_IMG_DISPLAY_WIDTH
+
+    // Give some space between the img and the screen edges:
+    gCanvas.width = displayWidth - IMG_PADDING
+
+    // Set height to keep original img ratio:
+    gCanvas.height = elImg.height * (displayWidth / elImg.width);
+
+    // Draw img on canvas, and fit .row-editor to canvas' width:
     gCtx.drawImage(elImg, 0, 0, elImg.width, elImg.height, 0, 0, gCanvas.width, gCanvas.height);
     document.querySelector(".row-editor").style.width = gCanvas.width + 'px'
-    // console.log('document.querySelector(".editor-container").width = ', document.querySelector(".editor-container").width)
-    // console.log('gCanvas.width = ', gCanvas.width)
-
 }
 
 function renderMemeTexts() {
@@ -44,9 +44,10 @@ function renderMemeTexts() {
         gCtx.strokeStyle  = 'black'
         gCtx.lineWidth    = 5
         gCtx.textBaseline = "bottom"
+        let lineFontSize = gMeme[line].fontSize.slice(0,-2) // drop the 'px'
         let y
-        if (line === 'top'   ) y = 60
-        if (line === 'middle') y = +gCanvas.height / 2 + 40
+        if (line === 'top'   ) y = +lineFontSize + 5
+        if (line === 'middle') y = +lineFontSize - 5 + (+gCanvas.height / 2)
         if (line === 'bottom') y = +gCanvas.height
         let x = +gCanvas.width / 2
         gCtx.strokeText(gMeme[line].txt, x, y)
@@ -87,4 +88,10 @@ function renderChooseLineBtn(line) {
     elEditorTxtLine.placeholder = `Enter ${line} row text here...`
     elEditorTxtLine.value = gMeme[line].txt
     elEditorTxtLine.focus()
+    // let elChooseLineDropdown = document.querySelector('.dropdown-select-line-content')
+    // let elsChooseLineBtns = elChooseLineDropdown.querySelectorAll('button, img')
+    // for(let elChooseLineBtn of elsChooseLineBtns){
+    //     elChooseLineBtn.classList.add('display-none')
+    // }
+    // elChooseLineDropdown.classList.add('display-none')
 }
