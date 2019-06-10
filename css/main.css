@@ -236,8 +236,8 @@ h1{
 .dropdown-select-line-btn img, .row-editor-btn img {
     height: 40px;
     width: 40px;
-    /* object-fit: contain; */
     object-position: 50% 50%;
+    border-radius: 8px;
 }
 
 /* Dropdown Content (Hidden by Default) */

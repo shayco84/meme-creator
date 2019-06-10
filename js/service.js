@@ -81,7 +81,6 @@ function onKeyUpSearchInput() {
 }
 
 function updateDefaultFontSizeToFitCanvas(canvasHeight) {
-    console.log('canvasHeight = ', canvasHeight)
     let defaultFontSize = Math.floor(canvasHeight * FONT_TO_IMG_HEIGHT_RATIO)
     let lines = ["top", "middle", "bottom"]
     for (let line of lines) {

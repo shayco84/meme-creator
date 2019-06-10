@@ -35,7 +35,7 @@ function navBarItemClicked(elNavBarItem, page) {
         renderMemeEditor(elCurImg)
         updateDefaultFontSizeToFitCanvas(gCanvas.height)
     } else if (page === 'gallery') {
-        renderGallery()
+        backToGalClicked()
     }
 }
 
@@ -54,7 +54,8 @@ function chooseLineClicked(line) {
 }
 
 function backToGalClicked() {
-    document.querySelector('#editor-txt-input').value = ''
     gMemeBackToDefault()
+    document.getElementById('editor-txt-input').value = ''
+    renderChooseLineBtn('top')
     renderGallery()
 }
