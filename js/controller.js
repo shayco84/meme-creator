@@ -28,6 +28,12 @@ function onKeyUpMemeText(elTextRow, event) {
 function navBarItemClicked(elNavBarItem, page) {
     // TODO - add support to About and Contact tabs
     if (page === 'about' || page === 'contact') return
+
+    // Editor view, and gMeme model - back to default:
+    gMemeBackToDefault()
+    document.getElementById('editor-txt-input').value = ''
+    renderChooseLineBtn('top')
+
     renderActiveNavBarItem(elNavBarItem)
     toggleNavBarMenu()
     if (page === 'editor') {
