@@ -68,11 +68,11 @@ function clearInput(){
   
   }
 
-
-
 function backToGalClicked() {
     gMemeBackToDefault()
     document.getElementById('editor-txt-input').value = ''
     renderChooseLineBtn('top')
+    let elNavBarGalleryItem = document.querySelector('.menu-item-gallery')
+    renderActiveNavBarItem(elNavBarGalleryItem)
     renderGallery()
 }
