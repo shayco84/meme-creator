@@ -15,7 +15,6 @@ ul, li {
 }
 
 a, button {
-    background-color: #ffffff;
     text-decoration: none;
 }
 
@@ -28,8 +27,11 @@ button, li {
 }
 
 body, html{
-    background-color: white;
     width: 100%;
+}
+
+body, html, button {
+    background-color: black;
 }
 
 h1{
@@ -158,10 +160,9 @@ h1{
 }
 
 .editor-page-container {
-    margin: 0 auto;
+    margin: 5px auto 0;
     display: block;
     width: fit-content;
-    /*padding-left: 5px;*/
 }
 
 .row-editor, .meme-canvas, .download-meme-and-back-2-gal-btns-container {
@@ -211,6 +212,7 @@ h1{
     color: #58c93a;
     border-radius: 5px;
     text-align: center;
+    /*background-color: black;*/
 }
 
 .dropdown-select-line-container {
@@ -241,7 +243,7 @@ h1{
 .dropdown-select-line-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    /*background-color: black;*/
     min-width: 40px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
@@ -253,7 +255,6 @@ h1{
     display: block;
     width: 40px;
     cursor: pointer;
-    background-color: #f1f1f1;
 }
 
 /* Change color of dropdown links on hover */
@@ -313,6 +314,10 @@ h1{
 
 .font-lato {
     font-family: 'Lato', sans-serif;
+}
+
+.font-header {
+    color: #ffffff;
 }
 
 .font-weight-700 {
