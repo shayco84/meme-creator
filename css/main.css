@@ -146,7 +146,7 @@ h1{
 
 .search-input {
     padding: 5px;
-    max-width: 330px;
+    max-width: 300px;
 }
 /* =============================================== */
 /* =============================================== */
@@ -384,4 +384,16 @@ h1{
     display: flex;
     right: -10px;
     transition: right 0.8s;
+}
+
+.delete-btn{
+font-size: 20px;
+padding-right: 22px;
+
+}
+
+
+.upload-image-container{
+    display: flex;
+    justify-content: center;
 }

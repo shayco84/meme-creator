@@ -95,3 +95,15 @@ function renderChooseLineBtn(line) {
     // }
     // elChooseLineDropdown.classList.add('display-none')
 }
+
+function searchByEnterKey(){
+    var input = document.querySelector('.search-input');
+    input.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.querySelector('.Search-btn').click();
+      }
+    });
+    
+}
+

@@ -56,19 +56,22 @@
         <section>
             <div class="search-bar">
                 <input onkeyup="onKeyUpSearchInput()" list="search" class="search-input font-lato font-weight-700 font-size-28"
-                       type="text" placeholder="Search...">
+                type="text" placeholder="Search...">
                 <datalist id="search">
-                    <option value="animal">
-                    <option value="child">
-                    <option value="politics">
-                    <option value="celebs">
-                    <option value="movie">
-                    <option value="sport">
-                </datalist>
-                <button onclick="onSearch()">&#128269;</button>
+                    <option value="Animal">
+                        <option value="Child">
+                            <option value="Politics">
+                                <option value="Celebs">
+                                    <option value="Movie">
+                                        <option value="Sport">
+                                        </datalist>
+                                        <button class="delete-btn" onclick="clearInput()">🞮</button>
+                <button class="Search-btn" onclick="onSearch()">&#128269;</button>
             </div>
+           
             <div class="gallery-container">
                 <ul class="gallery-memes">
+                    
                     <li class="gallery-meme"><img id="img-1" onclick="galleryImgClicked(this)" src="img/memes/003.jpg"
                                                   alt=""></li>
                     <li class="gallery-meme"><img id="img-2" onclick="galleryImgClicked(this)" src="img/memes/004.jpg"

@@ -3,6 +3,8 @@
 function onInit() {
     gCanvas = document.querySelector(".meme-canvas");
     gCtx = gCanvas.getContext("2d");
+    searchByEnterKey()
+    
 }
 
 function onSearch(){
@@ -50,3 +52,12 @@ function chooseLineClicked(line) {
     gMeme.curLine = line
     renderChooseLineBtn(line)
 }
+
+function clearInput(){
+    document.querySelector('.search-input').value = '';
+    renderFilteredGallery(gImgs)
+  
+  }
+
+
+
