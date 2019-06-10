@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="324d56d2-8990-4170-a27f-45ae300361b2" name="Default Changelist" comment="">
+    <list default="true" id="324d56d2-8990-4170-a27f-45ae300361b2" name="Default Changelist" comment="Testing upload image (have to test it on github pages due to">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/util-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/util-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/view.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1022">
-              <caret line="388" column="4" lean-forward="true" selection-start-line="388" selection-start-column="1" selection-end-line="388" selection-end-column="18" />
+            <state relative-caret-position="154">
+              <caret line="288" column="6" lean-forward="true" selection-start-line="288" selection-start-column="1" selection-end-line="288" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -28,12 +30,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+            <state relative-caret-position="434">
+              <caret line="122" column="69" lean-forward="true" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="76" />
               <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#div#1;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -42,17 +46,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="372">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="n#!!block;n#onInit#0" />
                 <element signature="n#!!block;n#onSearch#0" />
                 <element signature="n#!!block;n#downloadMemeClicked#0" />
-                <element signature="n#!!block;n#uploadUserImage#0" />
                 <element signature="n#!!block;n#onKeyUpMemeText#0" />
+                <element signature="n#!!block;n#navBarItemClicked#0" />
                 <element signature="n#!!block;n#f#0" />
                 <element signature="n#!!block;n#f#0" />
               </folding>
@@ -79,15 +83,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="434">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="36" />
               <folding>
-                <element signature="n#!!block;n#renderMemeEditor#0" />
                 <element signature="n#!!block;n#renderGallery#0" />
-                <element signature="n#!!block;n#renderBaseImg#0" />
                 <element signature="n#!!block;n#renderMemeTexts#0" />
                 <element signature="n#!!block;n#renderFilteredGallery#0" />
-                <element signature="n#!!block;n#uploadUserImage#0" />
                 <element signature="n#!!block;n#renderActiveNavBarItem#0" />
                 <element signature="n#!!block;n#openMenu#0" />
                 <element signature="n#!!block;n#renderChooseLineBtn#0" />
@@ -96,14 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/util-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#13#39#0" />
-              </folding>
+            <state relative-caret-position="464">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -138,10 +136,10 @@
       <find>search-bar</find>
       <find>editor-btn im</find>
       <find>console</find>
-      <find>renderChooseLineBtn(line)</find>
       <find>gMemeBackToDefault</find>
-      <find>show-nav-bar-menu</find>
+      <find>renderChooseLineBtn(line)</find>
       <find>editor-txt-input</find>
+      <find>show-nav-bar-menu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,12 +155,12 @@
         <option value="$PROJECT_DIR$/js/meme-editor-controller.js" />
         <option value="$PROJECT_DIR$/meme-editor.html" />
         <option value="$PROJECT_DIR$/css/meme-editor.css" />
-        <option value="$PROJECT_DIR$/js/util-service.js" />
-        <option value="$PROJECT_DIR$/js/view.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/service.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/view.js" />
         <option value="$PROJECT_DIR$/js/controller.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/util-service.js" />
       </list>
     </option>
   </component>
@@ -238,7 +236,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559809168739</updated>
-      <workItem from="1559809173501" duration="87675000" />
+      <workItem from="1559809173501" duration="89177000" />
     </task>
     <task id="LOCAL-00001" summary="Initial layout for Meme-Editor page">
       <created>1559812350228</created>
@@ -443,11 +441,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560173550974</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Fix: When on Editor &quot;page&quot;, if clicking the Editor tab in the nav-bar, picture will be reset">
+      <created>1560175856973</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1560175856973</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87675000" />
+    <option name="totallyTimeSpent" value="89177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -496,7 +501,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Top line working" />
     <MESSAGE value="Top line working 2" />
     <MESSAGE value="Basic integration between Shay and Tal blocks.&#10;&#10;NOTICE - this is a &quot;brut-force&quot; integration, better to wait for Tals next push before reviewing the code" />
     <MESSAGE value="Integration step 1" />
@@ -521,7 +525,8 @@
     <MESSAGE value="Fix: now gMeme returns to default when we go back to the gallery" />
     <MESSAGE value="Fix: When going to editor tab without choosing an img (clicking the tab in the nav-bar), default font size was not updated - now fixed." />
     <MESSAGE value="Fix: Added gMeme back to default, when back to Gallery or gallery tab of nav-bar are clicked" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Added gMeme back to default, when back to Gallery or gallery tab of nav-bar are clicked" />
+    <MESSAGE value="Fix: When on Editor &quot;page&quot;, if clicking the Editor tab in the nav-bar, picture will be reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: When on Editor &quot;page&quot;, if clicking the Editor tab in the nav-bar, picture will be reset" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../../../Design2LivePage/design-2-live-page/index.html">
@@ -603,31 +608,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/util-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#13#39#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1022">
-          <caret line="388" column="4" lean-forward="true" selection-start-line="388" selection-start-column="1" selection-end-line="388" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        <state relative-caret-position="434">
+          <caret line="122" column="69" lean-forward="true" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="76" />
           <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#1;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -635,17 +625,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="288" column="6" lean-forward="true" selection-start-line="288" selection-start-column="1" selection-end-line="288" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="n#!!block;n#onInit#0" />
+            <element signature="n#!!block;n#onSearch#0" />
+            <element signature="n#!!block;n#downloadMemeClicked#0" />
+            <element signature="n#!!block;n#onKeyUpMemeText#0" />
+            <element signature="n#!!block;n#navBarItemClicked#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="434">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="36" />
           <folding>
-            <element signature="n#!!block;n#renderMemeEditor#0" />
             <element signature="n#!!block;n#renderGallery#0" />
-            <element signature="n#!!block;n#renderBaseImg#0" />
             <element signature="n#!!block;n#renderMemeTexts#0" />
             <element signature="n#!!block;n#renderFilteredGallery#0" />
-            <element signature="n#!!block;n#uploadUserImage#0" />
             <element signature="n#!!block;n#renderActiveNavBarItem#0" />
             <element signature="n#!!block;n#openMenu#0" />
             <element signature="n#!!block;n#renderChooseLineBtn#0" />
@@ -653,19 +663,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller.js">
+    <entry file="file://$PROJECT_DIR$/js/util-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!block;n#onInit#0" />
-            <element signature="n#!!block;n#onSearch#0" />
-            <element signature="n#!!block;n#downloadMemeClicked#0" />
-            <element signature="n#!!block;n#uploadUserImage#0" />
-            <element signature="n#!!block;n#onKeyUpMemeText#0" />
-            <element signature="n#!!block;n#f#0" />
-            <element signature="n#!!block;n#f#0" />
-          </folding>
+        <state relative-caret-position="464">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
         </state>
       </provider>
     </entry>

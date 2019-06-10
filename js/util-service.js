@@ -1,20 +1,37 @@
 'use strict'
-// TODO - remove if unused
-// function makeId(length=2) {
-//     var txt = '';
-//     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-//
-//     for(var i=0; i < length; i++) {
-//         txt += possible.charAt(Math.floor(Math.random() * possible.length));
-//     }
-//     return txt;
-// }
 
-function saveToStorage(key, value) {
-    var strValue = JSON.stringify(value);
-    localStorage.setItem(key, strValue);
-}
+function loadImage() {
+    let input, file, fr, img;
 
-function loadFromStorage(key) {
-    return JSON.parse(localStorage.getItem(key))
+    if (typeof window.FileReader !== 'function') {
+        alert("The file API isn't supported on this browser yet.");
+        return;
+    }
+
+    input = document.querySelector('.input-file');
+    if (!input) {
+        alert("Sorry, image could not be loaded.");
+    }
+    else if (!input.files) {
+        alert("This browser doesn't seem to support the `files` property of file inputs.");
+    }
+    else {
+        file = input.files[0];
+        fr = new FileReader();
+        fr.onload = createImage;
+        fr.readAsDataURL(file);
+    }
+
+    function createImage() {
+        img = new Image();
+        img.onload = imageLoaded;
+        img.src = fr.result;
+    }
+
+    function imageLoaded() {
+        let elImgDummy = document.getElementById("img-dummy")
+        elImgDummy.crossOrigin = "anonymous";
+        elImgDummy.src = img
+        renderMemeEditor(elImgDummy)
+    }
 }
