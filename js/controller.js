@@ -33,6 +33,7 @@ function navBarItemClicked(elNavBarItem, page) {
     if (page === 'editor') {
         let elCurImg = document.querySelector(`.gallery-memes #${gMeme.selectedImgId}`)
         renderMemeEditor(elCurImg)
+        updateDefaultFontSizeToFitCanvas(gCanvas.height)
     } else if (page === 'gallery') {
         renderGallery()
     }
