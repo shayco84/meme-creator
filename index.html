@@ -154,12 +154,18 @@
                     </div>
                 </div>
             </div>
-        <a onclick="downloadMemeClicked(this)" href="#" download="my-meme.jpg">
-            <button class="download-meme-button font-lato font-weight-700 font-size-16">Download Meme</button>
-
-        </a>
+        <div class="download-meme-and-back-2-gal-btns-container">
+            <a onclick="downloadMemeClicked(this)" href="#" download="my-meme.jpg">
+                <button class="download-meme-and-back-2-gal-btn font-lato font-weight-700 font-size-16">
+                    Download Meme
+                </button>
+            </a>
+            <button class="download-meme-and-back-2-gal-btn font-lato font-weight-700 font-size-16"
+                onclick="renderGallery()">
+                Back to Gallery
+            </button>
+        </div>
     </section>
-
 
     <script src="js/service.js"></script>
     <script src="js/util-service.js"></script>
