@@ -75,7 +75,6 @@ renderFilteredGallery(result)
 
 function onKeyUpSearchInput() {
     let value = document.querySelector('.search-input').value;
-    console.log(value)
     if (value === '') {
         renderFilteredGallery(gImgs)
     }
@@ -87,5 +86,17 @@ function updateDefaultFontSizeToFitCanvas(canvasHeight) {
     let lines = ["top", "middle", "bottom"]
     for (let line of lines) {
         gMeme[line].fontSize = defaultFontSize + 'px'
+    }
+}
+
+function gMemeBackToDefault() {
+    gMeme.curLine = 'top'
+    let lines = ["top", "middle", "bottom"]
+    for (let line of lines) {
+        gMeme[line].txt        = ''
+        gMeme[line].fontSize   = '60px'
+        gMeme[line].fontFamily = 'Impact'
+        gMeme[line].align      = 'center'
+        gMeme[line].color      = 'white'
     }
 }

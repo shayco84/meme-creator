@@ -51,3 +51,9 @@ function chooseLineClicked(line) {
     gMeme.curLine = line
     renderChooseLineBtn(line)
 }
+
+function backToGalClicked() {
+    document.querySelector('#editor-txt-input').value = ''
+    gMemeBackToDefault()
+    renderGallery()
+}
