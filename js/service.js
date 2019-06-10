@@ -64,14 +64,23 @@ let gMeme = {
 
 
 function search() {
-    var value = document.querySelector('.search-input').value;
-    var result = gImgs.filter(function (img) {
+    let value = document.querySelector('.search-input').value;
+    if (value === '') return
+    let result = gImgs.filter(function (img) {
         return img.keyword.findIndex(element => element === value) !== -1
     })
-    renderFilteredGallery(result)
+renderFilteredGallery(result)
 }
 
-function downloadMeme(elLink){
+function onKeyUpSearchInput() {
+    let value = document.querySelector('.search-input').value;
+    console.log(value)
+    if (value === '') {
+        renderFilteredGallery(gImgs)
+    }
+}
+
+function downloadMeme(elLink) {
     elLink.href = gCanvas.toDataURL();
     elLink.download = "my-meme.jpg"
 }
