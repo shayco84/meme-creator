@@ -14,10 +14,11 @@ function downloadMemeClicked(elLink) {
     elLink.download = "my-meme.jpg"
 }
 
-function uploadUserImage() {
-    // https://stackoverflow.com/questions/13938686/can-i-load-a-local-file-into-an-html-canvas-element
-    // http://jsfiddle.net/z3JtC/4
-}
+// TODO - add support to upload file
+// function uploadUserImage() {
+//     // https://stackoverflow.com/questions/13938686/can-i-load-a-local-file-into-an-html-canvas-element
+//     // http://jsfiddle.net/z3JtC/4
+// }
 
 function onKeyUpMemeText(elTextRow, event) {
     // TODO - validate user input is not Esc or some other weird key with event.keyCode

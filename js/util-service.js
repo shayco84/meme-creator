@@ -30,8 +30,10 @@ function loadImage() {
 
     function imageLoaded() {
         let elImgDummy = document.getElementById("img-dummy")
-        elImgDummy.crossOrigin = "anonymous";
         elImgDummy.src = img
-        renderMemeEditor(elImgDummy)
+        // img.id = 'img-dummy'
+        // console.log('elImgDummy = ', elImgDummy)
+        // img.id='img-dummy'
+        galleryImgClicked(elImgDummy)
     }
 }

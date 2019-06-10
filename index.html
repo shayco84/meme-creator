@@ -67,7 +67,6 @@
                 </datalist>
                 <button onclick="onSearch()">&#128269;</button>
             </div>
-            <div class="upload-image-container"><input class="input-file" type="file" onchange="loadImage(event)"></div>
             <div class="gallery-container">
                 <ul class="gallery-memes">
                     <li class="gallery-meme"><img id="img-1" onclick="galleryImgClicked(this)" src="img/memes/003.jpg"
@@ -120,10 +119,8 @@
                                                   src="img/memes/patrick.jpg" alt=""></li>
                     <li class="gallery-meme"><img id="img-25" onclick="galleryImgClicked(this)"
                                                   src="img/memes/putin.jpg" alt=""></li>
-                    <li class="gallery-meme display-none"><img id="img-dummy" src="" alt=""></li>
                 </ul>
             </div>
-
         </section>
     </section>
     <section class="editor-page-container display-none">
@@ -170,7 +167,6 @@
     </section>
 
     <script src="js/service.js"></script>
-    <script src="js/util-service.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/view.js"></script>
 </body>
